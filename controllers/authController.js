@@ -24,7 +24,7 @@
     SOFTWARE.
     */
     
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { User, sequelize } from "../models/userModel.js";
 await sequelize.sync();
 
