@@ -1,0 +1,35 @@
+<header class="bg-white shadow-sm border-b">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold text-gray-900">Smart Lighting</h1>
+                    <p class="text-sm text-gray-600">Powered by XianFire</p>
+                </div>
+            </div>
+            <nav class="flex items-center space-x-1">
+                <a href="/monitoring" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-gray-100 {{#if active.monitoring}}bg-blue-50 text-blue-700{{else}}text-gray-700{{/if}}">
+                    Monitoring
+                </a>
+                <a href="/settings" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-gray-100 {{#if active.settings}}bg-blue-50 text-blue-700{{else}}text-gray-700{{/if}}">
+                    Settings
+                </a>
+                <a href="/history" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-gray-100 {{#if active.history}}bg-blue-50 text-blue-700{{else}}text-gray-700{{/if}}">
+                    History
+                </a>
+                <a href="/notifications" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-gray-100 relative {{#if active.notifications}}bg-blue-50 text-blue-700{{else}}text-gray-700{{/if}}">
+                    Notifications
+                    <span id="notificationBadge" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center hidden">0</span>
+                </a>
+                <a href="/logout" class="px-4 py-2 text-sm font-medium text-gray-700 rounded-lg hover:bg-gray-100">
+                    Logout
+                </a>
+            </nav>
+        </div>
+    </div>
+</header>
